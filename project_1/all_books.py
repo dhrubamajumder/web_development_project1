@@ -5,6 +5,7 @@
 import add_books
 import view_all_books
 import remove_books
+import search_books
 
 all_books = []
 
@@ -14,7 +15,7 @@ while True:
     print("1. Add Contact")
     print("2. View Contacts")
     print("3. Remove Contact")
-    # print("4. Search Contact")
+    print("4. Search Contact")
     print("5. Exit")
 
     menu = input("Select any number : ")
@@ -32,9 +33,9 @@ while True:
     elif menu == "3":
         remove_books.remove_books(all_books)
 
-    # elif menu == "4":
-    #     pass
-    
+    elif menu == "4":
+        search_books.search_books(all_books)
+
     else:
         print("Sorry.")
 
