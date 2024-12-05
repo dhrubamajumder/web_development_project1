@@ -1,6 +1,3 @@
-# --------------------------------------------------------------------
-
-
 
 import add_books
 import view_all_books
@@ -20,11 +17,7 @@ while True:
 
     menu = input("Select any number : ")
 
-    if menu == "5":
-        print("Thanks for using Contact Book Management System")
-        break
-
-    elif menu == "1":
+    if menu == "1":
         all_books = add_books.add_books(all_books)
     
     elif menu == "2":
@@ -35,6 +28,10 @@ while True:
 
     elif menu == "4":
         search_books.search_books(all_books)
+
+    elif menu == "5":
+        print("Thanks for using Contact Book Management System")
+        break
 
     else:
         print("Sorry.")
